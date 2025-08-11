@@ -6,7 +6,14 @@ const cors = require("cors");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://team-hackathon-git-main-aimans-projects-154e344e.vercel.app",
+      "http://localhost:3000",
+    ],
+  })
+);
 app.use(express.json());
 
 // Connect to MongoDB Atlas
