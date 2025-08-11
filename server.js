@@ -9,9 +9,10 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://team-hackathon-git-main-aimans-projects-154e344e.vercel.app",
+      "https://team-hackathon-six.vercel.app",,
       "http://localhost:3000",
     ],
+      credentials: true,
   })
 );
 app.use(express.json());
